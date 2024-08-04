@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение файла со стилями -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="main__body">
+    <!-- Основная страница -->
+    <main>
+      <!-- Меню сайта -->
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__item-link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="./our_projects.html" class="menu__item-link">Наши проекты</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__item-link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">Контакты</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Секция главного экрана -->
+      <section class="section__hero" id="hero">
+        <div class="wrapper-bg">
+          <div class="container">
+            <div class="hero__inner">
+              <div div class="hero__title">
+                <h1 class="title">Готовые проекты наших учеников</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция с готовыми проектами -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="projects__inner">
+            <div class="projects__info">
+              <h5 class="projects__title">Наши проекты</h5>
+            </div>
+            <div class="projects__text">
+              Lorem Ipsum&nbsp;&mdash; это текст-&laquo;рыба&raquo;, часто используемый
+              в&nbsp;печати и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной &laquo;рыбой&raquo;
+              для текстов на&nbsp;латинице с&nbsp;начала XVI&nbsp;века.
+            </div>
+            <div class="projects__img">
+              <div class="img">
+                <img src="./img/projects.png" alt="фото выполненного проекта" />
+              </div>
+              <div class="img">
+                <img src="./img/projects.png" alt="фото выполненного проекта" />
+              </div>
+              <div class="img">
+                <img src="./img/projects.png" alt="фото выполненного проекта" />
+              </div>
+              <div class="img">
+                <img src="./img/projects.png" alt="фото выполненного проекта" />
+              </div>
+            </div>
+            <div class="projects__button">
+              <a href="#!" class="projects-btn">Все проекты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция скачки и загрузки файлов -->
+      <section class="downloads">
+        <div class="container__downloads">
+          <!-- Скрытый элемент input для выбора файлов -->
+          <input
+            type="file"
+            id="fileInput"
+            multiple
+            accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf"
+          />
+          <!-- Кнопка для активации выбора файлов -->
+          <button class="custom-file-input" onclick="document.getElementById('fileInput').click();">
+            Выбрать файл(ы) для загрузки
+            <img src="./icons/download-file.png" width="48" alt="иконка для скачивания файлов" />
+          </button>
+          <!-- Сообщение, если файлы не выбраны -->
+          <div id="noFilesMessage" class="no-files-message" style="display: none">
+            Файл не выбран
+          </div>
+          <div id="fileList" class="file-list"></div>
+          <button id="deleteAllButton" style="display: none">Удалить все файлы</button>
+          <button id="downloadButton" class="download-button" style="display: none">
+            Скачать загруженные файлы
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-column">
+            <h3>Контактная информация</h3>
+            <ul>
+              <li><a href="mailto:example@example.com">example@example.com</a></li>
+              <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+              <li>
+                <a href="https://maps.google.com/?q=123+Example+Street" target="_blank"
+                  >123 Example Street</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Основные ссылки</h3>
+            <ul>
+              <li><a class="footer__item-link" href="#">Главная</a></li>
+              <li><a class="footer__item-link" href="#">Наши проекты</a></li>
+              <li><a class="footer__item-link" href="#">Наши услуги</a></li>
+              <li><a class="footer__item-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Наши проекты</h3>
+            <ul>
+              <li><a class="footer__item-link" href="#!">РосНано</a></li>
+              <li><a class="footer__item-link" href="#!">Сколково</a></li>
+              <li><a class="footer__item-link" href="#!">Проект “Восток”</a></li>
+              <li><a class="footer__item-link" href="#!">ТЭЦ Калининграда</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Социальные сети</h3>
+            <ul>
+              <li>
+                <a class="footer__item-link" href="https://vk.com" target="_blank">VK.com</a>
+              </li>
+              <li>
+                <a class="footer__item-link" href="https://instagram.com" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a class="footer__item-link" href="https://facebook.com" target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a class="footer__item-link" href="https://twitter.com" target="_blank">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">&copy;&nbsp;2019. Все права защищены.</div>
+      </div>
+    </footer>
+  </body>
+  <!-- Подключение JavaScript файла -->
+  <script src="./js/scripts.js"></script>
+</html>
